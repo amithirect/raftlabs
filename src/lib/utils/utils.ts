@@ -14,7 +14,7 @@ const AppUtils = {
   replaceItemInArray: <T>(array: T[], newItem: T, key: string): T[] =>
     (array ?? []).map((item) => (item[key] === newItem[key] ? newItem : item)),
 
-  getBestOffer: (offers: Offer[], items: FoodItem[], prevOrders: number) => {
+  getBestOffer: (offers: Offer[], items: FoodItem[]) => {
     var bestOffer: AppliedOffer = {
       title: "",
       discount: 0,

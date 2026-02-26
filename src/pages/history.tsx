@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import {
   Table,
   TableHeader,
@@ -6,7 +6,6 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  Pagination,
   Spinner,
   getKeyValue,
 } from "@heroui/react";
