@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import {
   Table,
   TableHeader,
@@ -12,21 +11,8 @@ import {
 
 import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
-import { AppContext } from "@/lib/providers/app-provider";
-import { useContext } from "react";
 
 const HistoryPage = () => {
-  const rowsPerPage = 10;
-  const { appState } = useContext(AppContext);
-
-  const cartState = appState.cart;
-
-  const pages = useMemo(() => {
-    return cartState?.items?.length > 0
-      ? Math.ceil(cartState.items?.length / rowsPerPage)
-      : 0;
-  }, [cartState?.items, rowsPerPage]);
-
   const loadingState = "idle";
 
   return (

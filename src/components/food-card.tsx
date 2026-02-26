@@ -1,7 +1,7 @@
 import { Card, CardBody, CardFooter, NumberInput } from "@heroui/react";
 import { Button } from "@heroui/button";
 import { FC } from "react";
-import { Cart2Icon, DeleteIcon } from "./icons";
+import { DeleteIcon } from "./icons";
 
 interface FoodCardProps {
   item: FoodItem;

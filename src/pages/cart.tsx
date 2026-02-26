@@ -108,7 +108,7 @@ const CartPage = () => {
 
   const appliedOffer = useMemo(() => {
     if (cartState?.offers?.length > 0) {
-      return AppUtils.getBestOffer(cartState.offers, cartState?.items ?? [], 0);
+      return AppUtils.getBestOffer(cartState.offers, cartState?.items ?? []);
     }
 
     return null;
